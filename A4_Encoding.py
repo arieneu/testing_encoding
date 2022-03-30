@@ -74,7 +74,7 @@ def plot_PRC_model(classifier, encoder, X, y):
   ax.set_xlabel('Recall')
   ax.set_ylabel('Precision')
   ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-  ax.title.set_text(f'Precsion-Recall Curce with 10-Fold CV using {encoder} encoding')
+  ax.title.set_text(f'Precsion-Recall Curve with 10-Fold CV using {str(encoder)}')
   plt.show()
   
   pass
