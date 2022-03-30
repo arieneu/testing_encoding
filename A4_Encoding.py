@@ -11,11 +11,9 @@ from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
 
 # Read our training and test data 
-# training_data = pd.read_csv(str(sys.argv[1]), sep='\t')
-# test_data = pd.read_csv(str(sys.argv[2]), sep='\t')
 
-training_data = pd.read_csv('A4_TrainData.tsv', sep='\t', header=None)
-test_data = pd.read_csv('A4_TestData.tsv', sep='\t', header=None)
+training_data = pd.read_csv(str(sys.argv[1]), sep='\t', header=None)
+test_data = pd.read_csv(str(sys.argv[2]), sep='\t', header=None)
 
 # Clean up data and prepare for encoding
 training_data.rename(columns={0:"Nominal Data", 1:'Class'}, inplace=True)
